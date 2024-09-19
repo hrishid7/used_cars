@@ -75,7 +75,7 @@ $conn->close();
             <div class="col-md-4">
                 <label for="brand" class="form-label">Select Car Brand</label>
                 <select class="form-select" id="brand" name="brand">
-                    <option value="">All Brands</option>
+                    <option value="">Al Brands</option>
                     <?php foreach ($brands as $brand): ?>
                         <option value="<?php echo $brand['id']; ?>" <?php if ($brand_filter == $brand['id']) echo 'selected'; ?>>
                             <?php echo htmlspecialchars($brand['name']); ?>
